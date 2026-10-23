@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para ti 💜</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="para-ti-fondo">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Nuestra Historia 💜
+        </div>
+
+        <div class="nav-links">
+
+            <a href="{{ url_for('inicio') }}">
+                Inicio
+            </a>
+
+            <a href="{{ url_for('historia') }}">
+                Historia
+            </a>
+
+           
+
+            <a href="{{ url_for('para_ti') }}"
+               class="activo">
+                Para ti
+            </a>
+
+            <a href="{{ url_for('jardin') }}">
+                Jardín
+            </a>
+
+            <a href="{{ url_for('cancion') }}">
+                Canción
+            </a>
+
+            <a href="{{ url_for('lo_que_amo') }}">
+                Lo que amo
+            </a>
+
+            <a href="{{ url_for('sorpresa') }}">
+                Sorpresa
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- CORAZONES DECORATIVOS -->
+
+    <div class="corazones-para-ti">
+
+        <span>♡</span>
+        <span>💜</span>
+        <span>♡</span>
+        <span>💜</span>
+        <span>♡</span>
+        <span>💜</span>
+        <span>♡</span>
+
+    </div>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="para-ti-contenido">
+
+        <section class="para-ti-intro">
+
+            <span>
+                ESTA PARTE ES SOLAMENTE PARA TI
+            </span>
+
+            <h1>
+                Para ti, mi amor 💜
+            </h1>
+
+            <p>
+                Hay cosas que quizás no digo todos los días,
+                así que hoy quiero escribirlas.
+            </p>
+
+        </section>
+
+
+        <!-- CARTA -->
+
+        <section class="carta-para-ti">
+
+            <div class="decoracion-carta">
+                ✦
+            </div>
+
+            <div class="encabezado-carta">
+
+                <span>
+                    23 · 10 · 2026
+                </span>
+
+                <div>
+                    Para la persona que amo 💜
+                </div>
+
+            </div>
+
+
+            <div class="texto-carta">
+
+                <p>
+                    Mi amor:
+                </p>
+
+                <p>
+                    Quiero empezar diciéndote algo que quizás
+                    ya sabes, pero que nunca me voy a cansar
+                    de repetir: te amo.
+                </p>
+
+                <p>
+                    Estos tres años contigo significan muchísimo
+                    para mí. Cuando pienso en todo lo que hemos
+                    vivido, me doy cuenta de que no solamente
+                    hemos acumulado tiempo, sino también recuerdos,
+                    experiencias, risas, conversaciones y momentos
+                    que ahora forman parte de nuestra historia.
+                </p>
+
+                <p>
+                    Me gusta pensar en cómo comenzó todo y en
+                    todo lo que hemos cambiado desde entonces.
+                    Hemos aprendido uno del otro y hemos seguido
+                    avanzando juntos.
+                </p>
+
+                <p>
+                    Sé que no siempre soy perfecto y que algunas
+                    veces puedo equivocarme, pero quiero que sepas
+                    que mi intención siempre será seguir aprendiendo
+                    a quererte mejor.
+                </p>
+
+                <p>
+                    Quiero estar para ti cuando estés feliz,
+                    cuando tengas un día difícil, cuando necesites
+                    hablar o simplemente cuando quieras tenerme
+                    cerca.
+                </p>
+
+                <p>
+                    Porque para mí no se trata solamente de celebrar
+                    los días bonitos. También quiero compartir contigo
+                    los días normales, esos pequeños momentos que
+                    quizás parecen insignificantes pero que terminan
+                    siendo los recuerdos que más extrañamos.
+                </p>
+
+                <p>
+                    Gracias por estos tres años.
+                    Gracias por cada momento que me has regalado,
+                    por cada sonrisa y por cada recuerdo que ahora
+                    puedo guardar en mi corazón.
+                </p>
+
+            </div>
+
+
+            <div class="separador-para-ti">
+                💜
+            </div>
+
+
+            <!-- BOTÓN -->
+
+            <div class="boton-carta-container">
+
+                <button
+                    class="boton-carta"
+                    onclick="mostrarContinuacion()">
+
+                    Hay algo más que quiero decirte...
+
+                </button>
+
+            </div>
+
+
+            <!-- CONTINUACIÓN -->
+
+            <div
+                class="continuacion-carta"
+                id="continuacionCarta">
+
+                <p>
+                    No sé exactamente qué nos espera en el futuro,
+                    pero sí sé algo:
+                </p>
+
+                <p class="frase-especial">
+                    Quiero seguir descubriéndolo contigo.
+                </p>
+
+                <p>
+                    Quiero que todavía tengamos muchas fechas
+                    que celebrar, muchas fotografías que guardar,
+                    muchas canciones que nos recuerden el uno al otro
+                    y muchísimas historias que contar.
+                </p>
+
+                <p>
+                    Si algún día volvemos a mirar esta página
+                    después de muchos años, quiero que podamos
+                    recordar que alguna vez estuvimos aquí,
+                    celebrando nuestros primeros tres años.
+                </p>
+
+                <p class="frase-final-para-ti">
+                    Y si tuviera que volver a elegir...
+                    <br>
+                    volvería a elegirte a ti.
+                </p>
+
+                <div class="firma-para-ti">
+
+                    Con todo mi amor,
+
+                    <br><br>
+
+                    Siempre tuyo. ❤️
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FRASE FINAL -->
+
+        <section class="frase-para-ti">
+
+            <div class="flor-corazon">
+                🌷
+            </div>
+
+            <h2>
+                Nuestra historia todavía continúa...
+            </h2>
+
+            <p>
+                Y espero que podamos seguir escribiéndola
+                juntos durante muchísimo tiempo.
+            </p>
+
+            <div class="corazon-final">
+                💜
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Hecho con amor para ti 💜
+        </p>
+
+        <p>
+            23 · 10 · 2026
+        </p>
+
+    </footer>
+
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}">
+    </script>
+
+</body>
+
+</html>

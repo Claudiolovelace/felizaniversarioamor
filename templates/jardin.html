@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Jardín para Ti 🌷</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="jardin-fondo">
+        <nav class="navbar">
+
+            <div class="logo">
+                23 <span>♡</span>
+            </div>S
+
+            <div class="nav-links">
+
+                <a href="{{ url_for('inicio') }}">
+                    Inicio
+                </a>
+                <a href="{{ url_for('historia') }}">
+                    Historia
+                </a>
+                <a href="{{ url_for('para_ti') }}">
+                    Para ti
+                </a>
+                <a href="{{ url_for('jardin') }}" class="activo">
+                    Jardín
+                </a>
+                <a href="{{ url_for('cancion') }}">
+                    Canción
+                </a>
+                <a href="{{ url_for('lo_que_amo') }}">
+                    Lo que amo
+                </a>
+
+                <a href="{{ url_for('sorpresa') }}">
+                    Sorpresa
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <main class="jardin-contenido">
+
+            <section class="jardin-intro">
+
+                <p class="pequeno">
+                    UN PEQUEÑO LUGAR PARA TI
+                </p>
+
+                <h1>
+                    Mi jardín para ti
+                </h1>
+
+                <p>
+                    Cada flor guarda un pequeño mensaje.
+                    Toca las flores y descubre lo que quiero decirte.
+                </p>
+
+            </section>
+
+
+            <section class="jardin">
+
+                <div class="decoracion hoja-1">🌿</div>
+                <div class="decoracion hoja-2">🍃</div>
+                <div class="decoracion hoja-3">🌿</div>
+                <div class="decoracion hoja-4">🍃</div>
+
+
+                <button class="flor flor-rosa"
+                        onclick="mostrarMensaje(
+                        'Rosa',
+                        'Te amo por cada forma en la que haces que mi corazón se sienta especial. 🌹'
+                        )">
+
+                    🌹
+
+                    <span>Rosa</span>
+
+                </button>
+
+
+                <button class="flor flor-tulipan"
+                        onclick="mostrarMensaje(
+                        'Tulipán',
+                        'Gracias por estos tres años llenos de momentos que siempre voy a guardar. 🌷'
+                        )">
+
+                    🌷
+
+                    <span>Tulipán</span>
+
+                </button>
+
+
+                <button class="flor flor-girasol"
+                        onclick="mostrarMensaje(
+                        'Girasol',
+                        'Así como el girasol busca la luz, yo siempre encuentro una razón para sonreír cuando estoy contigo. 🌻'
+                        )">
+
+                    🌻
+
+                    <span>Girasol</span>
+
+                </button>
+
+
+                <button class="flor flor-margarita"
+                        onclick="mostrarMensaje(
+                        'Margarita',
+                        'Me encantan esos pequeños momentos contigo que terminan convirtiéndose en grandes recuerdos. 🌼'
+                        )">
+
+                    🌼
+
+                    <span>Margarita</span>
+
+                </button>
+
+
+                <button class="flor flor-hibisco"
+                        onclick="mostrarMensaje(
+                        'Hibisco',
+                        'Tu forma de ser tiene algo que siempre consigue quedarse en mi corazón. 🌺'
+                        )">
+
+                    🌺
+
+                    <span>Hibisco</span>
+
+                </button>
+
+
+                <button class="flor flor-lavanda"
+                        onclick="mostrarMensaje(
+                        'Lavanda',
+                        'Contigo encuentro tranquilidad, cariño y ese lugar donde simplemente puedo ser yo. 🪻'
+                        )">
+
+                    🪻
+
+                    <span>Lavanda</span>
+
+                </button>
+
+
+                <button class="flor flor-loto"
+                        onclick="mostrarMensaje(
+                        'Loto',
+                        'Quiero seguir creciendo contigo y descubrir todo lo bonito que todavía nos espera. 🪷'
+                        )">
+
+                    🪷
+
+                    <span>Loto</span>
+
+                </button>
+
+
+                <button class="flor flor-cerezo"
+                        onclick="mostrarMensaje(
+                        'Flor de cerezo',
+                        'Quiero que sigamos creando recuerdos que algún día podamos mirar y recordar con una sonrisa. 🌸'
+                        )">
+
+                    🌸
+
+                    <span>Cerezo</span>
+
+                </button>
+
+
+                <button class="flor flor-bouquet"
+                        onclick="mostrarMensaje(
+                        'Para ti',
+                        'Todas estas flores juntas no alcanzan para representar todo lo que significas para mí. 💐'
+                        )">
+
+                    💐
+
+                    <span>Para ti</span>
+
+                </button>
+
+
+                <div class="mensaje-centro">
+
+                    <div class="corazon-jardin">
+                        💜
+                    </div>
+
+                    <h2>
+                        Un jardín lleno de ti
+                    </h2>
+
+                    <p>
+                        Porque si pudiera regalarte algo,
+                        te regalaría un jardín entero.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section class="ultima-flor">
+
+                <p>
+                    🌷 Todavía queda una flor...
+                </p>
+
+                <button onclick="florEspecial()">
+                    Abrir la última flor
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <div id="ventanaMensaje" class="ventana">
+
+            <div class="ventana-contenido">
+
+                <button class="cerrar"
+                        onclick="cerrarMensaje()">
+                    ×
+                </button>
+
+                <div id="florMensaje">
+                    🌹
+                </div>
+
+                <h2 id="tituloMensaje">
+                    Para ti
+                </h2>
+
+                <p id="textoMensaje">
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <p>
+                Un jardín hecho especialmente para ti 💜
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>ss

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Sorpresa 💜</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="sorpresa-fondo">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Nuestra Historia 💜
+        </div>
+
+        <div class="nav-links">
+
+            <a href="{{ url_for('inicio') }}">
+                Inicio
+            </a>
+
+            <a href="{{ url_for('historia') }}">
+                Historia
+            </a>
+
+          
+
+            <a href="{{ url_for('para_ti') }}">
+                Para ti
+            </a>
+
+            <a href="{{ url_for('jardin') }}">
+                Jardín
+            </a>
+
+            <a href="{{ url_for('cancion') }}">
+                Canción
+            </a>
+
+            <a href="{{ url_for('lo_que_amo') }}">
+                Lo que amo
+            </a>
+
+            <a href="{{ url_for('sorpresa') }}"
+               class="activo">
+                Sorpresa
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="sorpresa-contenido">
+
+        <!-- INTRO -->
+
+        <section class="sorpresa-intro">
+
+            <span>
+                ALGO ESPECIAL TE ESTÁ ESPERANDO
+            </span>
+
+            <h1>
+                La sorpresa 💜
+            </h1>
+
+            <p>
+                Llegaste hasta el final...
+            </p>
+
+            <p>
+                Pero todavía queda una última cosa.
+            </p>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section class="zona-sobre">
+
+            <div class="sobre"
+                 id="sobre">
+
+                <div class="sobre-tapa">
+                </div>
+
+                <div class="sobre-cuerpo">
+
+                    <div class="sello">
+                        💜
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="boton-abrir"
+                onclick="abrirSorpresa()">
+
+                Abrir mi sorpresa 💌
+
+            </button>
+
+        </section>
+
+
+        <!-- CARTA -->
+
+        <section
+            class="carta-sorpresa"
+            id="cartaSorpresa">
+
+            <div class="carta-contenido">
+
+                <div class="carta-corazon">
+                    💜
+                </div>
+
+                <span class="carta-pequena">
+                    PARA EL AMOR DE MI VIDA
+                </span>
+
+                <h2>
+                    Mi amor:
+                </h2>
+
+
+                <p>
+                    Si llegaste hasta aquí, quiero que sepas
+                    que hice cada parte de esta página pensando
+                    en ti.
+                </p>
+
+                <p>
+                    No quería simplemente regalarte algo.
+                    Quería construir algo que pudiera guardar
+                    un poquito de nuestra historia.
+                </p>
+
+                <p>
+                    Tres años contigo han estado llenos de
+                    momentos que quiero conservar para siempre.
+                    Hemos tenido días bonitos, días difíciles,
+                    risas, conversaciones, pequeños enojos
+                    y muchísimos momentos que solamente
+                    nosotros entendemos.
+                </p>
+
+                <p>
+                    Y aunque no siempre sé cómo expresar todo
+                    lo que siento, quiero que tengas algo claro:
+                    eres una persona demasiado importante para mí.
+                </p>
+
+                <p>
+                    Gracias por estos tres años.
+                    Gracias por cada abrazo, cada palabra,
+                    cada momento y cada recuerdo.
+                </p>
+
+                <p>
+                    Y sobre todo, gracias por seguir formando
+                    parte de mi vida.
+                </p>
+
+
+                <div class="separador-carta">
+                    ✦ ✦ ✦
+                </div>
+
+
+                <p class="mensaje-grande">
+                    Feliz 3er aniversario,
+                    mi amor. 💜
+                </p>
+
+                <p>
+                    Espero que este sea solamente uno de
+                    los muchos aniversarios que todavía
+                    nos quedan por celebrar.
+                </p>
+
+
+                <div class="firma-carta">
+                    Con todo mi amor,
+                    <br>
+                    siempre yo. ❤️
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+
+        <section
+            class="final-sorpresa"
+            id="finalSorpresa">
+
+            <div class="estrellas">
+                ✦　✧　✦　✧　✦
+            </div>
+
+            <h2>
+                3 años...
+            </h2>
+
+            <p>
+                y todavía te volvería a elegir.
+            </p>
+
+            <div class="numero-tres">
+                3
+            </div>
+
+            <p class="ultima-frase">
+                Hoy, mañana y en cada nueva historia
+                que nos toque escribir.
+            </p>
+
+            <div class="corazones-final">
+                💜 💜 💜
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Nuestra historia todavía continúa... 💜
+        </p>
+
+        <p>
+            23 · 10 · 2026
+        </p>
+
+    </footer>
+
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}">
+    </script>
+
+</body>
+
+</html>

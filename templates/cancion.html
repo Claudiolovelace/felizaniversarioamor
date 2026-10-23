@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestra Canción 💜</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="cancion-fondo">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Nuestra Historia 💜
+        </div>
+
+        <div class="nav-links">
+
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+
+            <a href="{{ url_for('historia') }}">Historia</a>
+
+
+            <a href="{{ url_for('para_ti') }}">Para ti</a>
+
+            <a href="{{ url_for('jardin') }}">Jardín</a>
+
+            <a href="{{ url_for('cancion') }}"
+               class="activo">
+                Canción
+            </a>
+
+            <a href="{{ url_for('lo_que_amo') }}">
+                Lo que amo
+            </a>
+
+            <a href="{{ url_for('sorpresa') }}">
+                Sorpresa
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="cancion-contenido">
+
+        <section class="cancion-intro">
+
+            <span class="pequeno">
+                UNA CANCIÓN PARA NOSOTROS
+            </span>
+
+            <h1>
+                Nuestra canción 🎵💜
+            </h1>
+
+            <p>
+                Hay canciones que simplemente escuchamos...
+                y hay otras que terminan teniendo un significado especial.
+            </p>
+
+        </section>
+
+
+        <!-- REPRODUCTOR -->
+
+        <section class="reproductor">
+
+            <div class="disco">
+
+                <div class="disco-centro">
+                    💜
+                </div>
+
+            </div>
+
+
+            <div class="informacion-cancion">
+
+                <span class="etiqueta">
+                    PARA TI
+                </span>
+
+                <h2>
+                    Nuestra canción
+                </h2>
+
+                <p>
+                    Cada vez que la escuche, quiero recordar
+                    todo lo que hemos vivido juntos.
+                </p>
+
+
+              <audio id="musica">
+
+    <source
+        src="{{ url_for('static', filename='audio/cancion.mp4') }}"
+        type="video/mp4">
+
+    Tu navegador no soporta el audio.
+
+</audio>
+
+                <div class="controles">
+
+                    <button
+                        onclick="reproducirCancion()"
+                        id="botonReproducir">
+
+                        ▶
+
+                    </button>
+
+                    <button
+                        onclick="pausarCancion()">
+
+                        ⏸
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENSAJE -->
+
+        <section class="mensaje-cancion">
+
+            <div class="nota-musical">
+                ♪
+            </div>
+
+            <h2>
+                Si algún día escuchas esta canción...
+            </h2>
+
+            <p>
+                Elegí esta canción porque, de alguna manera, me hace pensar en nosotros. Después de estos 3 años juntos, me doy cuenta de que no importa dónde estemos ni qué pase a nuestro alrededor, mientras esté contigo, cualquier lugar puede sentirse como nuestro hogar. ❤️
+
+Si algún día pudiéramos escapar de todo y viajar juntos hasta Marte, lo haría sin pensarlo, porque después de todo este tiempo sigo eligiéndote a ti. Gracias por estos tres años, por cada recuerdo, cada sonrisa, cada momento difícil y cada momento bonito que hemos compartido.
+
+Y si pudiera volver al comienzo de nuestra historia, te volvería a elegir una y otra vez. 🌙🪐💜
+
+Feliz aniversario, mi amor. Por estos 3 años y por todos los que todavía nos quedan por vivir. ❤️
+
+            </p>
+
+            <p>
+                Tres años pueden parecer mucho tiempo,
+                pero cuando estoy contigo siento que todavía
+                nos quedan muchísimas historias por vivir.
+            </p>
+
+            <div class="firma">
+                Siempre tú. 💜
+            </div>
+
+        </section>
+
+
+        <!-- CORAZONES -->
+
+        <section class="dedicatoria">
+
+            <span>♡</span>
+            <span>♪</span>
+            <span>💜</span>
+            <span>♫</span>
+            <span>♡</span>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Hecho con amor para la persona que hace especial mi vida 💜
+        </p>
+
+        <p>
+            23 · 10 · 2026
+        </p>
+
+    </footer>
+
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}">
+    </script>
+
+</body>
+
+</html>
